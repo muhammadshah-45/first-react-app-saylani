@@ -1,4 +1,4 @@
-body{
+/* body{
     width: 100%;
 }
 .container {
@@ -25,7 +25,7 @@ body{
 
 button {
     padding: 3px 7px;
-    /* font-weight: 600; */
+  
     border-radius: 5px;
     border: navajowhite;
     background: black;
@@ -34,4 +34,4 @@ button {
 }
 .reset-btn{
     margin: 0 auto;
-}
+} */
