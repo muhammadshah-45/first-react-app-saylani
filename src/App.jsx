@@ -10,6 +10,12 @@ import ProductDetail from './Pages/ProductDetail'
 import ProductPage from './Pages/ProductPage'
 import SignUpPage from './Pages/SignUpPage'
 import Navbar from './components/Navbar'
+import FullStackDev from './Pages/FullStackDev'
+import DataScience from './Pages/DataScience'
+import Career from './Pages/Career'
+import CyberSecurity from './Pages/CyberSecurity'
+import All from './Pages/All'
+import TestForm from './Pages/TestForm'
 function App() {
   // const [numbers,setNumbers] = useState([])
   // const [filter,setFilter] = useState('')
@@ -49,7 +55,7 @@ function App() {
   // console.log(numbers)
   // console.log(filter)
   return (
-    <>
+    <div>
     {/* <Login/> */}
     {/* <div>
         <h1>Number List</h1>
@@ -57,16 +63,27 @@ function App() {
     <input onChange={handleFilterChange} type="text" placeholder='filter numbers' name="" id="" />
     <NumberList numbers={filteredNumbers}/>
     </div> */}
-    <Navbar></Navbar>
+    {/* <Navbar></Navbar> */}
     <Routes>
+      <Route index element={<All/> }/>
+      <Route path='/full-stack-dev' element={<FullStackDev/> }/>
+      <Route path='/career' element={<Career/> }/>
+      <Route path='/data-science' element={<DataScience/> }/>
+      <Route path='/cyber-security' element={<CyberSecurity/>}/>
+      <Route path='/login' element={<Login/>}/>
+      <Route path='/test-form' element={<TestForm/>} />
+
+      
+    </Routes>
+    {/* <Routes>
       <Route path='/' element={<Home/>} />
-      <Route path='/product-detail' element={<ProductDetail/>} />
-      <Route path='/product' element={<ProductPage/>} />
+      <Route path='/product-detail/:id' element={<ProductDetail/>} />
+      <Route path='/product/' element={<ProductPage/>} />
       <Route path='/sign-up' element={<SignUpPage/>} />
       <Route path='/login' element={<Login/>} />
 
-    </Routes>
-    </>
+    </Routes> */}
+    </div>
   //   <>
   //   <h1 className='text-green-800 font-mono w-full bg-purple-300'>Hello</h1>
   //   <div className='container'>

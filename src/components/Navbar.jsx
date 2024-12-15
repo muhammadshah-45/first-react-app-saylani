@@ -5,26 +5,30 @@ const Navbar = () => {
     const navLinks =[
         {
             url:'/',
-            title:'Home'
+            title:'All'
         },
         {
-            url:'/product',
-            title:'Products'
+            url:'/data-science',
+            title:'Data Science'
         },
         {
-            url:'/login',
-            title:'Login'
+            url:'/career',
+            title:'Career'
         },
         {
-            url:'/sign-up',
-            title:'Sign Up'
+            url:'/full-stack-dev',
+            title:'Full Stack Development'
         },
+        {
+          url:'/cyber-security',
+          title:'Cyber Security'
+      },
     ]
   return (
     <>
       <nav>
-        <ul className='flex border border-gray-700 justify-center items-center py-5 bg-green-500 gap-3 text-white'>
-          {navLinks.map(({url,title},index)=>(
+        <ul className='flex justify-center fixed top-0 items-center py-5  gap-3  w-full bg-pink-500 rounded-md bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-40 shadow-md text-white'>
+          {navLinks.map(({url,title})=>(
             <>
             <li className='border px-2 py-1 rounded-lg hover:bg-green-400 hover:text-green-900'>
 
